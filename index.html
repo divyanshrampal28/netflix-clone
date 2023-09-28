@@ -3,21 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Netflix India</title>
+    <link rel="shortcut icon" href="assets/images/netflix-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
 </head>
 <body>
-    <div class="container">
-        <div class="banner">
-
-        </div>
-        <div class="features">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+    
+    <div id="background-image">
+        <div class="background">
+            <div class="navbar">
+                <img src="./assets/images/logo.png" alt="logo" class="logo">
+                <select name="language" id="language">
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                </select>
+                <button class="signin">Sign in</button>
+            </div>
+            <div class="main">
+                <h1 class="main-heading">The biggest Indian hits. The best Indian stories. All streaming here.</h1>
+                <p class="main-para">Watch anywhere. Cancel anytime.</p>
+            </div>
         </div>
     </div>
+    <div class="television">
+        <div class="television-container">
+            <div class="description">
+                <h2 id="television-heading">Enjoy on your TV</h2>
+                <p id="television-para">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+            </div>
+            <div class="clip">
+                <img src="assets/images/tv.png" alt="">
+                <video autoplay muted loop id="television-video">
+                    <source src="assets/videos/video-tv-in-0819.m4v" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-section">
+        <div class="mobile-container">
+            <div class="mobile">
+                <img src="assets/images/mobile.jpg" alt="">
+                <div class="stranger">
+                    <img src="assets/images/stranger-things-small.png" alt="">
+                    <p>Stranger Things<br><span>Downloading....</span></p>
+                    <img src="assets/videos/download-icon.gif" alt="">
+                </div>
+            </div>
+            <div class="description">
+                <h2 id="television-heading">Download your shows to watch offline</h2>
+                <p id="television-para">Save your favourites easily and always have something to watch.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="devices">
+        <div class="television-container">
+            <div class="description">
+                <h2 id="television-heading">Watch everywhere</h2>
+                <p id="television-para">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            </div>
+            <div class="clip">
+                <img src="assets/images/everywhere.png" alt="">
+                <video autoplay muted loop id="devices-video">
+                    <source src="assets/videos/video-devices-in.m4v" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="children">
+        <div class="children-container">
+            <img src="assets/images/children.png" alt="">
+            <div class="description kids-description`">
+                <h2 id="television-heading">Create profiles for kids</h2>
+                <p id="television-para">Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
