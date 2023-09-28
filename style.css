@@ -238,6 +238,116 @@ option{
     width : 55%;
 }
 
+/* accordian starts here */
+
+.faq{
+    background-color: black;
+    padding: 10px 12px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+
+}
+input[type="radio"]{
+    display: none;
+
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.faq .email-sign{
+    max-width: 480px;
+    margin: 20px auto 60px;
+}
+.faq small{
+    width: 30px;
+}
+
+/* accordian ends here */
+
+/*email section*/
+
+.email-sign{
+    background: transparent;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+    border: 1px solid white;
+}
+
+.email-sign input{
+    flex: 1;
+    border: 0;    
+    outline: 0;
+    margin-left: 20px;
+    background: transparent;
+    width: 45vh;
+}
+  
+.email-sign button{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 14px 30px;
+}
+
+/* end here*/
+
 
 @media (max-width: 950px) {
     .television-container{
