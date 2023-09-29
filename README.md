@@ -6,7 +6,7 @@ This project is a clone of the Netflix landing page, created with HTML, CSS, and
 
 ## 🎥 Demo
 
-Check out the live demo [here](https://65166a7513a91b3deed464c3--capable-beignet-522ce9.netlify.app/)!
+Check out the live demo [here](https://capable-beignet-522ce9.netlify.app/)!
 
 ## 🚀 Getting Started
 
